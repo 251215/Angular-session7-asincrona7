@@ -10,6 +10,5 @@ export class DadoComponent {
 numero:string="0";
 
 gira(){
-this.numero= Math.random()*100;
 }
 }
