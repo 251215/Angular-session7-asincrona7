@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { min } from 'rxjs';
 
 @Component({
   selector: 'app-dado',
@@ -7,8 +8,11 @@ import { Component } from '@angular/core';
 })
 export class DadoComponent {
 
-numero:string="0";
-
-gira(){
+numero=0;
+inicio=1;
+fin=9;
+gira(){ 
+  this.numero=this.inicio+Math.floor(Math.random()*this.fin);
 }
+
 }
